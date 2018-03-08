@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>pomodoro clock</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <html>
+  <body>
+    <div class="jumbotron">POMODORO CLOCK</div>
+    <div class="container-fluid">
+    <div class="container">
+      <div class="row"><div class="col-sm-6">
+    Session:
+     <button onclick="incdec('decsession')">-</button>
+     <span id="sessiontime" type="text">25</span>          <button onclick="incdec('incsession')">+</button></div>
+    <br><br><div class="col-sm-6">
+    Break:
+    <button onclick="incdec('decbreak')">-</button>
+    <span id="breaktime" type="text">5</span>
+        <button onclick="incdec('incbreak')">+</button></div></div>
+  
+      <div id="timer"><span id="timeval">00:00</span></div><br>
+       <div id="buttonholder">
+    <button id="start" onclick="starttimer()">START</button>
+        <button id="reset" onclick="resettimer()">RESET</button></div><br>
+     
+    </div>
+  </body>
+</html>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
